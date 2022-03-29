@@ -13,7 +13,7 @@ The command line interface is a way to use your computer mostly without the GUI 
 4. It makes you understand your data, the data analyses processes better, which helps you troubleshoot more effectively.
 5. It might be scary at first but it is a lot of fun!
 
-MacOs and linux are both unix vased systems. Unfortunately most of the commands we use do not work with PCs. But bear with me, you can still have a unix based terminal on windows. Although I do not have a windows machine to try this, I know someone who used it. Please try the [ubuntu bash terminal](https://www.howtogeek.com/249966/how-to-install-and-use-the-linux-bash-shell-on-windows-10/).
+MacOs and linux are both unix vased systems. Unfortunately most of the commands we use do not work with PCs. But bear with me, you can still have a unix based terminal on windows. Although I do not have a windows machine to try this, I know someone who used it. Please try the [ubuntu bash terminal](https://www.howtogeek.com/249966/how-to-install-and-use-the-linux-bash-shell-on-windows-10/). We also saw that [Cygwin](https://www.cygwin.com/) worked for some during the tutorial.
 
 # Basic commands
 
