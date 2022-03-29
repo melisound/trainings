@@ -1,5 +1,5 @@
 
-## Learning basic command line tools to make our lives easier
+## Learning basic command line tools that can make our lives easier
 
 # What is the command line?
 
