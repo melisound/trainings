@@ -8,7 +8,7 @@ The command line interface is a way to use your computer mostly without the GUI 
 # Why is command line useful?
 
 1. It opens up possibility of using many open source code/programs/scripts for data analysis.
-2. It enables making manual tedious jobs to be automated.
+2. It enables manual tedious jobs to be automated.
 3. It is a great tranferable skill to have in the age of big data.
 4. It makes you understand your data, the data analyses processes better, which helps you troubleshoot more effectively.
 5. It might be scary at first but it is a lot of fun!
