@@ -1,3 +1,6 @@
+uniq
+sort
+cut
 grep
 pipe
 sed
