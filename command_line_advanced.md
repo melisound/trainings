@@ -86,5 +86,8 @@ sed has many more functionalities!
 $ man sed
 ```
 
-wildcards
-awk
+The next useful thing we will learn about is "*". The star stands for Life, the universe and everything, meaning you can use it to replace a certain text pattern.
+
+```
+$ cp *.gtf ../ # this will cp all the files that has a gtf extention to the upper directory
+$ rm ./* # this will delete all the documents in the current directory! BE CAREFUL!
