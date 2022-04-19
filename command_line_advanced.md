@@ -71,8 +71,10 @@ $ grep "\tgene" Araport11.gtf | less # aha that worked!
 Here 2 important things to know:
   1. "\t" stands for tab in unix text language
   2. "\n" stands for new line
-[Here](https://regexr.com/) info on regular expressions.
+
+[Here](https://regexr.com/) more info on regular expressions.
 With grep you can also find on which line an exact word is:
+
 ```
 $ grep -n "\tgene" Araport11.gtf | less
 ```
