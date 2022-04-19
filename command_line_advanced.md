@@ -81,13 +81,20 @@ Let's say that you do not want to have Araport11 in this file and want to replac
 $ sed 's/Araport11/At_gene_model/g' Araport11.gtf > Araport11_updated.gtf # this substitutes Araport11 with At_gene_model
 $ sed 's/Chr//g' Araport11.gtf | less # this will remove Chr from the text
 ```
-sed has many more functionalities!
+sed has many more functionalities, check the manual! I usually google what I want to do and add sed to the search phrase if I feel like it is something that I can do with sed.
 ```
 $ man sed
 ```
-
-The next useful thing we will learn about is "*". The star stands for Life, the universe and everything, meaning you can use it to replace a certain text pattern.
+awk is a similar tool, but some say more powerful. It kinda intimidates me so I try to solve issues with other commands but sometimes I give up and go to awk. awk will read your file line by line and perform a function, such as print, replace, edit. It works like this:
+```
+$ awk '{print}' Araport11.gtf | less # will print the whole thing, but now with less just exploring
+$ awk '{print $1,$4,$5}' Araport11.gtf > Araport11.bed # oops it has spaces instead of tabs.
+$ awk 'OFS="\t" {print $1,$4,$5}' Araport11.gtf > Araport11.bed # OFS=output field separator
+```
+The next useful thing we will learn about is "*". The star stands for Life, the universe and everything, meaning you can use it to replace any text pattern.
 
 ```
 $ cp *.gtf ../ # this will cp all the files that has a gtf extention to the upper directory
 $ rm ./* # this will delete all the documents in the current directory! BE CAREFUL!
+```
+
