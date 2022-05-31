@@ -2,7 +2,7 @@
 
 Have you ever done blasts manually one by one on a website maybe for 10+ genes? You are now at the right place to do this with a single liner, ok well maybe 2 single liners.
 
-# BLAST Command Line Applications
+# BLAST Command Line Applications installation
 
 You can find the manual [here](https://www.ncbi.nlm.nih.gov/books/NBK279690/). Most software you use like BLAST also have command line interface applications with far more options. You can usually find info if you type name of the software and "command line" to get to where you can find information. From the manual go to installation and MacOSX or your operating system. There are several options here and we will continue with one of the hardest ways as most programs do not have user friendly options. Let's first download
 
@@ -23,19 +23,18 @@ $ cd bin
 $ ls
 ```
 
-The blast option we will use today is blastx and we can see it is in the folder. Let's try to run it to see if it works:
+The blast option we will use today is blastn and we can see it is in the folder. Let's try to run it to see if it works:
 
 ```
 $ blastn # if this does not work try:
 $ ./blastn # you sometimes have to indicate the folder with ".\"
 ```
-Now if you go to another folder and type blastn, the command line will not know where to look for it and throw you an error
+Now if you go to another folder and type blastx, the command line will not know where to look for it and throw you an error
 
 ```
 $ cd ..
 $ blastn
 ```
-
 
 Alternatively we can add this to our PATH with:
 
@@ -44,8 +43,13 @@ $ echo $PATH
 $ pwd
 $ export PATH=$PATH:$PWD
 ```
+# Sound Genome Repository
 
-Now we have blast installed, let's see how we can make use of our genome repository. For this you either need to be on the network or use vpn for connecting to the servers. Open finder and Go>Connect to Server. Enter the IP address, then username and password. Now you should have access to the genome repo and everything inside. Today we will use tomato to do our blasts. We already have a blast database here in the repo so we do not need to create one. But this is the first 1-liner to do this:
+Now we have blast installed, let's see how we can make use of our genome repository. For this you either need to be on the network or use vpn for connecting to the servers. Open finder and Go>Connect to Server. Enter the IP address, then username and password. Now you should have access to the genome repo and everything inside. Today we will use tomato to do our blasts. 
+
+# Creating a adatabase
+
+We already have a blast database here in the repo so we do not need to create one. But this is the code in case you need to create one:
 
 ```
 $ cd 
@@ -61,7 +65,9 @@ $ cd results
 $ blastn -help
 ```
 
-It looks like we are ready to start doing some fancy blasting! Here is the second one-liner we need:
+# Running blast
+
+It looks like we are ready to start doing some fancy blasting! Here is the  one-liner we need:
 
 ```
 
