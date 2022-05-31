@@ -47,7 +47,7 @@ $ export PATH=$PATH:$PWD
 
 Now we have blast installed, let's see how we can make use of our genome repository. For this you either need to be on the network or use vpn for connecting to the servers. Open finder and Go>Connect to Server. Enter the IP address, then username and password. Now you should have access to the genome repo and everything inside. Today we will use tomato to do our blasts. 
 
-# Creating a adatabase
+# Creating a database
 
 We already have a blast database here in the repo so we do not need to create one. But this is the code in case you need to create one:
 
