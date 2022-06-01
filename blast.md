@@ -4,7 +4,7 @@ Have you ever done blasts manually one by one on a website maybe for 10+ genes? 
 
 # BLAST Command Line Applications installation
 
-You can find the manual [here](https://www.ncbi.nlm.nih.gov/books/NBK279690/). Most software you use like BLAST also have command line interface applications with far more options. You can usually find info if you type name of the software and "command line" to get to where you can find information. From the manual go to installation and MacOSX or your operating system. There are several options here and we will continue with one of the hardest ways as most programs do not have user friendly options. Let's first download
+You can find the manual [here](https://www.ncbi.nlm.nih.gov/books/NBK279690/). Most software you use like BLAST also have command line interface applications with far more options. You can usually find info if you type name of the software and "command line" to get to where you can find information. From the manual go to installation and MacOSX or your operating system. There are several options here and we will continue with one of the hardest ways as most programs do not have user friendly options. Let's first download:
 
 ```
 $ cd # go to your home directory
@@ -29,7 +29,7 @@ The blast option we will use today is blastn and we can see it is in the folder.
 $ blastn # if this does not work try:
 $ ./blastn # you sometimes have to indicate the folder with ".\"
 ```
-Now if you go to another folder and type blastx, the command line will not know where to look for it and throw you an error
+Now if you go to another folder and type blastx, the command line will not know where to look for it and throw you an error:
 
 ```
 $ cd ..
