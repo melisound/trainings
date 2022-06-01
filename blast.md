@@ -53,11 +53,11 @@ We already have a blast database here in the repo so we do not need to create on
 
 ```
 $ cd 
-$ cd /Volumes/Public/genomics/
+$ cd /Volumes/Data/genomics/
 $ ls
 $ cd solanum_lycopersicum/microtom/ITAG4.0/
 $ ls
-$ makeblastdb -in ./ITAG4.0_CDS.fasta -dbtype nucl -parse_seqids -out ./blast_indexes/ITAG4.0_CDS -logfile ./blast_indexes/ITAG4.0_CDS_Log.txt
+$ makeblastdb -in ./ITAG4.0_CDS.fasta -dbtype nucl -parse_seqids -out ./blast_indices/ITAG4.0_CDS -logfile ./blast_indexes/ITAG4.0_CDS_Log.txt
 $ cd
 $ cd blast
 $ mkdir results
@@ -71,7 +71,7 @@ It looks like we are ready to start doing some fancy blasting! Here is the  one-
 
 ```
 
-$ blastn -query /Volumes/Public/genomics/solanum_lycopersicum/microtom/ITAG4.0/ITAG4.0_CDS.fasta -db /Volumes/Public/genomics/solanum_lycopersicum/microtom/ITAG4.0/blast_indexes/ITAG4.0_CDS -out microtom_CDs_to_CDs.txt -num_alignments 25 -outfmt "7 qseqid qlen sseqid slen qstart qend sstart send evalue bitscore score length pident nident mismatch positive gapopen gaps"
+$ blastn -query /Volumes/Data/genomes/Solanum_lycopersicum/Reference/microtom/ITAG4.0/ITAG4.0_CDS.fasta -db /Volumes/Data/genomes/Solanum_lycopersicum/Reference/microtom/ITAG4.0/blast_indices/ITAG4.0_CDS -out microtom_CDs_to_CDs.txt -num_alignments 25 -outfmt "7 qseqid qlen sseqid slen qstart qend sstart send evalue bitscore score length pident nident mismatch positive gapopen gaps"
 ```
 Now, if you have a gene that you would like to analyze further, you can have a look at all the blast results for that gene with:
 
